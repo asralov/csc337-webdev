@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-content">
+        <div class="main-title">
+            <img id="js" src="./img/javascript.png" width="80px" alt="javascript programming language">
+            <h1>
+                Welcome To Abror's Coding Bootcamp
+            </h1>
+            <img id="java" src="./img/java.png" width="100px" alt="java programming language">
+        </div>
+        <div class="sign-up-info">
+            <p id="sign-text">
+                I assume you would like to take part in my coding bootcamp where 
+                you will be learning the basics of OOP and certain programming 
+                languages such as: Python, Java, and etc. In order to be a part
+                of this bootcamp project, please fill up the form and wait for
+                your status on this programming bootcamp! Good luck.
+            </p>
+        </div>
+        <div class="sign-table">
+            <form action="https://benjdd.com/sp" method="post">
+                <div class="user-input">
+                    <label for="firstName">First Name:</label><br>
+                    <input class="user-info" type="text" name="firstName" id="firstName">
+                </div>
+                <div class="user-input">
+                    <label for="lastName">Last Name:</label><br>
+                    <input class="user-info" type="text" name="lastName" id="lastName">
+                </div>
+                <div class="user-input">
+                    <label for="primaryEmail">Primary email</label><br>
+                    <input class="user-info" type="email" name="primaryEmail" id="primaryEmail">
+                </div>
+                <div class="user-input">
+                    <label for="">Password</label><br>
+                    <input class="user-info" type="password" name="password" id="password">
+                </div>
+                <div class="user-input">
+                    <label for="">Recovery email</label><br>
+                    <input class="user-info" type="email" name="recoveryEmail" id="recoveryEmail">
+                </div>
+                <div class="user-input">
+                    <label for="phoneNumber">Phone number</label><br>
+                    <input class="user-info" type="tel" name="phoneNumber" id="phoneNumber" placeholder="ex(123-4567)" pattern="[0-9]{3}-[0-9]{4}">
+                </div>
+                <div class="user-input">
+                    <label for="weightInLbs">Weight in lbs</label><br>
+                    <input class="user-info" type="number" name="weightInLbs" id="weightInLbs">
+                </div>
+                <div class="user-input">
+                    <label for="bio">Bio</label><br>
+                    <textarea id="bio" name="bio" id="bio" cols="60" rows="10" placeholder="Tell me about yourself and your coding experience..."></textarea>
+                </div>
+                <div class="user-input">
+                    <label for="birthday">Birthday</label><br>
+                    <input class="user-info" type="date" name="birthday" id="birthday" placeholder="YYYY-MM-DD">
+                </div>
+                <div class="user-input">
+                    <p>Newsletter sign-up</p>
+                    <input class="user-info" type="radio" name="signNewsletter" id="yes" value="YES">
+                    <label for="yes">Yes</label>
+                    <input class="user-info" type="radio" name="signNewsletter" id="no" value="NO">
+                    <label for="nos">No</label>
+                    
+                </div>
+                <div class="user-input">
+                    <label for="">Satisfaction with company: <span id="satNum">1</span></label><br>
+                    <input onmousemove="slideRange(this.value)" onchange="slideRange(this.value)" class="user-info" id="rate" type="range" name="satisfactionLevel" min="1" max="10">
+                </div> 
+                <div class="user-input">
+                    <input id="submit" class="user-info" type="submit" value="Send your request!">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+</html>

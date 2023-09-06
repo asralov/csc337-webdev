@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - Place an Order</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="menu">
+      <h3>
+        <a href="./index.html"> HOME </a>
+      </h3>
+      <h3>
+        <a href="./about.html"> ABOUT COMPANY </a>
+      </h3>
+      <h3>
+        <a href="./car-models.html"> MODELS </a>
+      </h3>
+      <h3>
+        <a href="./placeOrder.html"> PLACE YOUR ORDER </a>
+      </h3>
+    </div>
+    <div class="form-table">
+      <form action="https://benjdd.com/sp" method="GET">
+        <div>
+          <label for="name">Enter Your Full Name</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="creditcard" >Enter Your Credit Card</label>
+          <input type="password" name="creditcard" id="creditcard" required>
+        </div>
+        <div>
+          <label for="email">Enter Your Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="age">Enter Your Age</label>
+          <input type="number" name="age" id="age" required>
+        </div>
+        <div>Choose your model:</div>
+        <input type="radio" name="car" id="m3_gts">
+        <label for="m3_gts" >M3 Competition GTS</label>
+        <input type="radio" name="car" id="m8_comp">
+        <label for="m8_comp">M8 Competition</label>
+        <input type="radio" name="car" id="550i_(F10)">
+        <label for="550i_(F10)">550i (F10)</label>
+        <div>
+          <label for="car-color">Choose the color:</label>
+          <input type="color" name="color" id="car-color">
+        </div>
+        <div>
+          <input id="submit" type="submit" value="Place the order">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(244, 244, 244);
+}
+
+.intro-info {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.23s;
+}
+a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.home-text {
+  width: 220px;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: inline;
+  line-height: 35px;
+}
+
+.intro-par {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 60px;
+}
+
+.bmw1 {
+  width: 800px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  border-radius: 1%;
+}
+
+.bmw-about {
+  font-weight: 550;
+}
+
+#product {
+  font-weight: 550;
+}
+
+.content-about {
+  font-size: 18px;
+
+  border: solid 2px rgba(0, 0, 0, 0.1);
+  padding: 25px 250px;
+  line-height: 1.5;
+}
+
+#globalmag {
+  font-weight: 550;
+}
+
+#wiki-bmw {
+  color: red;
+}
+
+#about-home {
+  color: red;
+}
+
+.container-label {
+  display: flex;
+  left: 30px;
+  justify-content: start;
+  margin: 10px;
+}
+
+#bmw-logo {
+  width: 130px;
+  background-color: #fff;
+  mix-blend-mode: multiply;
+}
+
+.models-container {
+  margin: 25px 25px;
+  line-height: 2;
+}
+
+.car-white-bmw {
+  width: 100px;
+}
+
+.cars-vars-img {
+  width: 350px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  display: flex;
+
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+tr,
+th {
+  padding: 20px 40px;
+  border: solid 0.5px black;
+}
+
+.form-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 4;
+}
+
+#submit {
+  background-color: grey;
+  color: white;
+  padding: 10px 125px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background-color: black;
+}

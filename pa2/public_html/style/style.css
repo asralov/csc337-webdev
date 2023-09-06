@@ -1,0 +1,85 @@
+body {
+  font-family: monospace;
+  background-color: black;
+  color: rgb(23, 154, 23);
+}
+
+.main-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  text-shadow: 2px -2px 8px rgba(23, 154, 23, 1);
+  /*border: double 1px green;*/
+}
+
+#java {
+  width: 100px;
+}
+
+#js {
+  width: 80px;
+}
+
+#sign-text {
+  padding-left: 250px;
+  padding-right: 250px;
+  line-height: 2;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sign-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  width: 100%;
+  background-color: black;
+  color: green;
+  font-family: monospace;
+  border: none;
+  border-bottom: green 2px solid;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.user-info:focus {
+  border: none;
+}
+
+#yes,
+#no {
+  width: auto;
+}
+
+#submit:hover {
+  transition: 0.5s;
+  border: green 1px solid;
+  border-radius: 5%;
+}
+
+#bio {
+  background-color: rgb(75, 119, 75);
+  font-size: 16px;
+  font-family: monospace;
+}
+
+#rate {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+#rate::-webkit-slider-runnable-track {
+  height: 16px;
+  background: #769c62;
+  border-radius: 16px;
+}

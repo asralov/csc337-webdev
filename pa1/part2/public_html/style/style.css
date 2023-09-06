@@ -1,0 +1,117 @@
+body {
+  font-family: cursive;
+  background-color: rgb(234, 250, 60);
+  color: #fff;
+}
+
+.mainTItle {
+  display: flex;
+  background-color: rgb(169, 182, 28);
+  justify-content: center;
+}
+
+.meal-section {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(197, 210, 59);
+}
+
+.meal-section,
+.mainTitle {
+  border: solid 0.5px black;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: black;
+}
+
+.palov {
+  width: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8%;
+  border: double 4.5px black;
+}
+
+.somsa {
+  width: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  border: dashed black 4px;
+}
+
+.meals {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-meals {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 15px;
+  line-height: 2;
+}
+
+#unesco-link,
+#somsa-wiki {
+  color: red;
+  transition: 0.4s;
+}
+
+#unesco-link:hover,
+#somsa-wiki:hover {
+  opacity: 0.5;
+}
+
+#somsa-text {
+  display: flex;
+  color: black;
+  font-family: monospace;
+  padding-right: 250px;
+  padding-left: 250px;
+  line-height: 2;
+}
+
+.table-palov-info {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+
+}
+
+tr, th, table{
+  border: solid black 3px;
+  border-collapse: collapse;
+  border-style: dotted;
+  background-color: rgb(212, 185, 185);
+  
+}
+
+.table-somsa-info {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 16px;
+  background-color: lightblue;
+}
+
+.table-somsa {
+  border-style:double;
+  border-color: rgb(17, 0, 255);
+}
