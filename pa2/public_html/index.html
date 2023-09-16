@@ -1,3 +1,18 @@
+<!--Author: Abrorjon Asralov
+    Description: This is a simple sign-up form to my coding bootcamp
+                 people who would like to take part in can sign up the
+                 the form will all requierd personal info then submit
+                 the form. The website is created using html5, css3 and
+                 some js. In the html there is a skeleton for the website
+                 then there is a style.css file that is supposed to change
+                 the looking of website. And there is an index.js file that
+                 does not do that much of significant stuff. It helps to 
+                 change the counter that is above the range. Whenever user
+                 tries to show how they are satisfied with the company, when
+                 they are scrolling the range scroller, then it changes the 
+                 nubmer above that scroller.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +25,11 @@
 <body>
     <div class="main-content">
         <div class="main-title">
-            <img id="js" src="./img/javascript.png" width="80px" alt="javascript programming language">
+            <img id="js" src="./img/javascript.png" alt="javascript programming language">
             <h1>
                 Welcome To Abror's Coding Bootcamp
             </h1>
-            <img id="java" src="./img/java.png" width="100px" alt="java programming language">
+            <img id="java" src="./img/java.png" alt="java programming language">
         </div>
         <div class="sign-up-info">
             <p id="sign-text">
@@ -26,53 +41,53 @@
             </p>
         </div>
         <div class="sign-table">
-            <form action="https://benjdd.com/sp" method="post">
+            <form action="https://benjdd.com/sp" method="POST">
                 <div class="user-input">
                     <label for="firstName">First Name:</label><br>
-                    <input class="user-info" type="text" name="firstName" id="firstName">
+                    <input class="user-info" type="text" name="firstName" id="firstName" pattern="^[A-Z][a-z]?$" placeholder="please enter your first name..." required>
                 </div>
                 <div class="user-input">
                     <label for="lastName">Last Name:</label><br>
-                    <input class="user-info" type="text" name="lastName" id="lastName">
+                    <input class="user-info" type="text" name="lastName" id="lastName" pattern="^[A-Z][a-z]?$" placeholder="please enter your last name..." required>
                 </div>
                 <div class="user-input">
                     <label for="primaryEmail">Primary email</label><br>
-                    <input class="user-info" type="email" name="primaryEmail" id="primaryEmail">
+                    <input class="user-info" type="email" name="primaryEmail" id="primaryEmail" placeholder="please enter your main email..." required>
                 </div>
                 <div class="user-input">
-                    <label for="">Password</label><br>
-                    <input class="user-info" type="password" name="password" id="password">
+                    <label for="password">Password</label><br>
+                    <input class="user-info" type="password" name="password" id="password" placeholder="please enter your password..." required>
                 </div>
                 <div class="user-input">
-                    <label for="">Recovery email</label><br>
-                    <input class="user-info" type="email" name="recoveryEmail" id="recoveryEmail">
+                    <label for="recoveryEmail">Recovery email</label><br>
+                    <input class="user-info" type="email" name="recoveryEmail" placeholder="please enter your recovery emaail..." id="recoveryEmail">
                 </div>
                 <div class="user-input">
                     <label for="phoneNumber">Phone number</label><br>
-                    <input class="user-info" type="tel" name="phoneNumber" id="phoneNumber" placeholder="ex(123-4567)" pattern="[0-9]{3}-[0-9]{4}">
+                    <input class="user-info" type="tel" name="phoneNumber" id="phoneNumber" placeholder="please enter your contact number... (123-4567)" pattern="[0-9]{3}-[0-9]{4}">
                 </div>
                 <div class="user-input">
                     <label for="weightInLbs">Weight in lbs</label><br>
-                    <input class="user-info" type="number" name="weightInLbs" id="weightInLbs">
+                    <input class="user-info" type="number" name="weightInLbs" placeholder="please enter your weight in lbs" id="weightInLbs">
                 </div>
                 <div class="user-input">
                     <label for="bio">Bio</label><br>
-                    <textarea id="bio" name="bio" id="bio" cols="60" rows="10" placeholder="Tell me about yourself and your coding experience..."></textarea>
+                    <textarea id="bio" name="bio" cols="60" rows="10" placeholder="Tell me about yourself and your coding experience..."></textarea>
                 </div>
                 <div class="user-input">
                     <label for="birthday">Birthday</label><br>
-                    <input class="user-info" type="date" name="birthday" id="birthday" placeholder="YYYY-MM-DD">
+                    <input class="user-info" type="date" name="birthday" id="birthday"><!--pattern="\d{4}-\d{1,2}-\d{1,2}"-->
                 </div>
                 <div class="user-input">
                     <p>Newsletter sign-up</p>
-                    <input class="user-info" type="radio" name="signNewsletter" id="yes" value="YES">
+                    <input class="user-info" type="radio" name="signNewsletter" id="yes" value="YES" required>
                     <label for="yes">Yes</label>
                     <input class="user-info" type="radio" name="signNewsletter" id="no" value="NO">
-                    <label for="nos">No</label>
+                    <label for="no">No</label>
                     
                 </div>
                 <div class="user-input">
-                    <label for="">Satisfaction with company: <span id="satNum">1</span></label><br>
+                    <label for="rate">Satisfaction with company: <span id="satNum">1</span></label><br>
                     <input onmousemove="slideRange(this.value)" onchange="slideRange(this.value)" class="user-info" id="rate" type="range" name="satisfactionLevel" min="1" max="10">
                 </div> 
                 <div class="user-input">
