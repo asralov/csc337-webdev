@@ -1,0 +1,90 @@
+<!--This is a html file to hold the skeleton and vital elements
+of the website-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>WTTJ</title>
+  </head>
+  <body>
+    <!--The section where user enters letters and use range to use the range 0-26 for swapping the alphabetical letter-->
+    <div id="sector1">
+        <!--The intro text-->
+        <div id="welcome-text">
+            <h1>
+                Welcome to the Jumble
+            </h1>
+        </div>
+        <div id="user-input">
+            <label for="userInput"></label>
+            <input oninput="updateContent()" type="text" name="user-input" id="userInput" value="WELCOME TO THE JUMBLE">
+        </div>
+        <div id="shift">
+            <label for="shiftRange"></label>
+            <div id="counter">0</div>
+            <div>
+                <input type="range" name="shift-range" id="shiftRange" value="0" min="0" max="26">
+            </div>
+        </div>
+        <div id="updateButtonContainer">
+            <label for="updateButton"></label>
+            <input type="submit" value="Update Square" id="updateButton">
+        </div>
+        <div id="table-container">
+            <table>
+                <tr>
+                    <td id="0">A</td>
+                    <td id="1">B</td>
+                    <td id="2">C</td>
+                    <td id="3">D</td>
+                    <td id="4">E</td>
+                </tr>
+                <tr>
+                    <td id="5">F</td>
+                    <td id="6">G</td>
+                    <td id="7">H</td>
+                    <td id="8">I</td>
+                    <td id="9">J</td>
+                </tr>
+                <tr>
+                    <td id="10">K</td>
+                    <td id="11">L</td>
+                    <td id="12">M</td>
+                    <td id="13">N</td>
+                    <td id="14">O</td>
+                </tr>
+                <tr>
+                    <td id="15">P</td>
+                    <td id="16">Q</td>
+                    <td id="17">R</td>
+                    <td id="18">S</td>
+                    <td id="19">T</td>
+                </tr>
+                <tr>
+                    <td id="20">U</td>
+                    <td id="21">V</td>
+                    <td id="22">W</td>
+                    <td id="23">X</td>
+                    <td id="24">Y</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--The section where entered words of the user should appear on the upper part of the website-->
+    <div id="sector2">
+        <div id="content1">
+            <!--There will be the user input text and it will be shown using the javascript-->
+        </div>
+    </div>
+    <!--The section where user can see the output after entered texts gets encrypted using the Caesar cipher algorithm-->
+    <div id="sector3">
+        <div id="content2">
+            <!--There will be the output that is also shown using the javascript-->
+        </div>
+    </div>
+    <!--Using the JS file to do some DOM on the real time as user interracts with the website-->
+    <script src="./script/index.js"></script>
+  </body>
+</html>
