@@ -1,0 +1,38 @@
+
+<!--Author: Abrorjon Asralov
+Class: CSC337
+Purpose: This is an html file for creating and
+keeping elements on website for users' use-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Chatty</title>
+</head>
+<body>
+    <div id="title">
+        Welcome To Chatty
+        <button class="fas fa-trash" id="clearHistory"></button>
+        <p id="clearMessage">Clear The History Of The Chat</p>
+    </div>
+    <div id="content">
+        <!--Need to use class="messageBoxes" to change all message boxes at the same time-->
+    </div>
+    <div id="sendMessageBox">
+        <div id="senderBox">
+            <span>Alias</span>
+            <input type="text" id="sender">
+        </div>
+        <div id="messageBox">
+            <span>Message</span>
+            <input type="text" id="message">
+            <button id="sendBtn" class="fas fa-paper-plane"></button>
+        </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

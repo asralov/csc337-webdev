@@ -1,0 +1,251 @@
+/*
+Author: Abrorjon Asralov
+Class: CSC337
+Purpose: This is a css file for style purposes to make
+nice and responsive ui for users
+*/
+
+body{
+    /*background-color: rgba(94, 111, 166, 0.7);*/
+    background-color: rgba(9, 0, 133, 0.3);
+}
+
+#title{
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(87, 97, 153, 0.7);
+    font-size: 3.5vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+#content{
+    position:fixed;
+    overflow:scroll;
+    width: 100%;
+    left: 0;
+    top: 12.25%;
+    bottom: 18%;
+}
+
+.messageBoxes{
+    margin-left: 1%;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 10px 0;
+    color: white;
+    text-shadow: 0 0 3px #000;
+    padding: 0.5% 0.5%;
+    margin-bottom: 0.5%;
+    text-align: left;
+}
+
+#sendMessageBox{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(87, 102, 153, 0.7);
+    width: 100%;
+}
+
+
+#senderBox{
+    margin-top: 2%;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+#sender, #message{
+    border:none;
+    border-radius: 30px 30px 30px 30px;
+    height:25px;
+    width: 325px;
+    padding-left: 1%;
+}
+
+#messageBox{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+#sendBtn, #clearHistory{
+    border-radius: 30px 30px 30px 30px;
+    border:none;
+    width: 3%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.fa-paper-plane, .fa-trash{
+    font-size: 2.5vh;
+    transition: 0.2s;
+    border:none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 8px 8px;
+}
+
+.fa-paper-plane:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.fa-trash:hover{
+    background-color: red;
+    color: #fff;
+}
+
+#clearHistory:hover + #clearMessage{
+    display: block;
+    position: absolute;
+    font-size: 1.5vh;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+    right: 30%;
+    top: 50%;
+    color: #fff;
+    opacity: 0.5;
+    border-radius:  0 10px 10px 10px;
+}
+
+#clearMessage{
+    display: none;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:1280px) {
+    #content{
+        bottom: 16%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #content{
+        bottom: 17%;
+    }
+}
+
+
+/* For any devices with the 540px < x < 920px size*/
+@media screen and (max-width: 920px){
+    #title{
+        font-size: 3.2vh;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #content{
+        top: 6%;
+        bottom: 10%;
+    }
+
+    .messageBoxes{
+        width: 70%;
+        font-size: 2.2vh;
+    }
+    span{
+        font-size: 2.5vh;
+    }
+
+    #senderBox{
+        margin-left: 7%;
+    }
+    #sendBtn, #clearHistory{
+        border-radius: 30px 30px 30px 30px;
+        border:none;
+        width: 7%;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .fa-paper-plane{
+        font-size: 2vh;
+        transition: 0.2s;
+        border:none;
+        border-radius: 30px 30px 30px 30px;
+        padding: 8px 8px;
+    }
+
+    #sender, #message{
+        width: 420px;
+        font-size: 1.9vh;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #title{
+        font-size: 3vh;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    #senderBox{
+        margin-left: 6%;
+    }
+    #sendBtn, #clearHistory{
+        border-radius: 30px 30px 30px 30px;
+        border:none;
+        width: 7%;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .fa-paper-plane{
+        font-size: 2vh;
+        transition: 0.2s;
+        border:none;
+        border-radius: 30px 30px 30px 30px;
+        padding: 8px 8px;
+    }
+
+
+}
+
+@media screen and (max-width:420px){
+    #title{
+        font-size: 3vh;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    #senderBox{
+        margin-left: 8%;
+    }
+
+    #content{
+        top: 6.5%;
+        bottom: 11%;
+    }
+
+    span{
+        font-size: 2vh;
+    }
+
+    #sendBtn, #clearHistory{
+        border-radius: 30px 30px 30px 30px;
+        border:none;
+        width: 9%;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .fa-paper-plane{
+        font-size: 2vh;
+        transition: 0.2s;
+        border:none;
+        border-radius: 30px 30px 30px 30px;
+        padding: 8px 8px;
+    }
+
+    #sender, #message{
+        width: 220px;
+        font-size: 1.9vh;
+    }
+}

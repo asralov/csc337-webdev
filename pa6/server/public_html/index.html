@@ -1,0 +1,45 @@
+<!--
+    Author: Abrorjon Asralov
+    Class: CSC337
+    Purpose: It is an html file to represent the content on the web to the user
+    on his window. It has got all needed elements such as user box input,
+    options to choose the language from and to.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Translator</title>
+</head>
+<body>
+    <div id="mainTitle">
+        <h1>Translator</h1>
+    </div>
+    <div id="fromBox">
+        <select id="fromLanguage" onchange="whichLanguage()">
+            <option value="en">English</option>
+            <option value="sp">Spanish</option>
+            <option value="ger">German</option>
+        </select>
+        <div id="inputBox1">
+            <!--Input Box-->
+            <textarea id="inPut" cols="30" rows="10"></textarea>
+
+        </div>
+    </div>
+    <div id="toBox">
+        <select id="toLanguage" onchange="whichLanguage()">
+            <option value="en">English</option>
+            <option value="sp">Spanish</option>
+            <option value="ger">German</option>
+        </select>
+        <div id="outputBox1">
+            <textarea id="outPut" cols="30" rows="10"></textarea>
+        </div>
+     </div>
+     <script src="./index.js"></script>
+</body>
+</html>
